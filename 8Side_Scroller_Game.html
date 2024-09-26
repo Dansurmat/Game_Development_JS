@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript 2D Game</title>
+    <style>
+        body{
+            background: black;
+        }
+        #canvas1{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50% , -50%);
+            border: 5px solid white;
+        }
+        #playerImage,#backgroundImage ,#enemyImage{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <canvas id="canvas1"></canvas>
+    <img id="playerImage" src="./image/player (2).png" alt="">
+    <img id="backgroundImage" src="./image/background_single.png" alt="">
+    <img id="enemyImage" src="./image/enemy_1.png" alt="">
+    
+    <script src="script8.js"></script>
+</body>
+</html>

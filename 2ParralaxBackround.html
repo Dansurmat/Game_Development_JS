@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parralax Background</title>
+    <style>
+        body{
+            background-color: black;
+        }
+         #container{
+            position: absolute;
+            width: 800px;
+            top:50%;
+            height: 700px;
+            left: 50%;
+            transform: translate(-50% , -50%); 
+            font-size: 25px;
+        }
+        #canvas1{
+            position: relative;
+            width: 800px;
+            height: 700px;
+        }
+        #slider{
+            width: 100%;
+        }
+        p{
+            color: white;
+        }
+     
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <canvas id="canvas1"></canvas>
+        <p>Game speed: <span id="showGameSpeed"></span></p>
+        <input type="range" min="0" max="20" value="5" class="slider" id="slider">
+    </div>
+    
+    <script src="script2.js"></script>
+  
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript Game</title>
+    <style>
+        @font-face {
+            font-family: 'creepster';
+            src: url(fonts/Creepster-Regular.ttf);
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        #canvas1{
+            border: 5px solid black;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50% , -50%);
+            max-width: 100%;
+            max-height: 100%;
+            font-family: 'creepster';
+        }
+        .images{
+            display: none;
+        } 
+    </style>
+</head>
+<body>
+
+    <canvas id="canvas1"></canvas>
+    <div class="images">
+        <img id="player" src="./gameImgs/player.png" alt="">
+        <img id="layer1" src="./gameImgs/layer-1.png" alt="">
+        <img id="layer2" src="./gameImgs/layer-2.png" alt="">
+        <img id="layer3" src="./gameImgs/layer-3.png" alt="">
+        <img id="layer4" src="./gameImgs/layer-4.png" alt="">
+        <img id="layer5" src="./gameImgs/layer-5.png" alt="">
+        <img id="enemy_fly"src="./gameImgs/enemy_fly.png" alt="">
+        <img id="enemy_plant"src="./gameImgs/enemy_plant.png" alt="">
+        <img id="enemy_spider_big"src="./gameImgs/enemy_spider_big.png" alt="">
+        <img id="fire" src="./gameImgs/fire.png" alt="" >
+        <img id="collisionAnimation" src="./gameImgs/boom.png" alt="">
+        <img id="lives" src="./gameImgs/lives.png" alt="">
+    </div>
+
+    <script type="module" src="script11.js"></script>
+</body>
+</html>
